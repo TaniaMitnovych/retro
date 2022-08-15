@@ -1,0 +1,37 @@
+@import '../../vars';
+
+.about-card{
+  display:flex;
+ align-items: center;
+  flex-direction: column;
+  padding: 2%;
+  &__title{
+    font-family: $subheaders-font-bazar;
+    text-transform: uppercase;
+    margin:5% 0;
+  }
+  &__subtitle{
+    font-family: $plain-text-font-roboto-slab;
+    text-transform: uppercase;
+    margin: 5% 0;
+  }
+  &__text{
+    line-height: 1.7;
+    font-family: $plain-text-font-roboto-slab;
+  }
+  &__line{
+    width:20%;
+    border-top-width: 2.5px;
+    border-top-style: solid;
+    margin: 2% 0;
+  }
+}
+
+.about-card{
+  &_light{
+    color:$header-color-dark;
+  }
+  &_dark{
+    color:$text-color-light;
+  }
+}

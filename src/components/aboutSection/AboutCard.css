@@ -1,0 +1,35 @@
+.about-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2%;
+}
+.about-card__title {
+  font-family: "Bazar", sans-serif;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+.about-card__subtitle {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  margin: 5% 0;
+}
+.about-card__text {
+  line-height: 1.7;
+  font-family: "Roboto Slab", serif;
+}
+.about-card__line {
+  width: 20%;
+  border-top-width: 2.5px;
+  border-top-style: solid;
+  margin: 2% 0;
+}
+
+.about-card_light {
+  color: #3a3a3a;
+}
+.about-card_dark {
+  color: #F9EBD9;
+}
+
+/*# sourceMappingURL=AboutCard.css.map */
