@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Bazar';
+  src: url('../../fonts/Bazar.ttf') format('truetype');
+  ;
+}
+
+@import '../../vars';
+
+.ribbon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height: 100px;
+  background-image: url('../../images/Ribbon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  &__image{
+    width:100%;
+    text-align: center;
+  }
+  &__text{
+    font-family: $subheaders-font-bazar;
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: 1.3vw;
+    margin-bottom: 1%;
+    font-size-adjust: 1.3;
+    color: $text-color-dark;
+  }
+}
