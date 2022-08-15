@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'SeasideResortNF';
+  src: url('../../fonts/SeasideResortNF.ttf') format('truetype');
+}
+
+@import '../../_vars.scss';
+
+.slider-section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background: url('../../images/Slider\ section\ BG.png');
+  position: relative;
+  z-index: 9;
+  &__banner{
+    width:40%;
+    margin-top: 5%;
+  }
+  &__line_dashed-top{
+    top: 15px;
+  }
+  &__line_dashed-bottom{
+    bottom: 15px;
+  }
+  &__text-hello,
+  &__text-welcome{
+    text-transform: uppercase;
+    font-family: $subheaders-font-bazar;
+    color: $text-color-light;
+  }
+  &__text-hello{
+    margin: 5% 0 2% 0;
+  }
+  &__text-welcome{
+    margin-bottom: 10%;
+  }
+
+
+}
+.ribbon{
+  width:60%;
+}
