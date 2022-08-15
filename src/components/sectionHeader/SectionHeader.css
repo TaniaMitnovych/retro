@@ -1,0 +1,32 @@
+.section-header_light {
+  color: #3a3a3a;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-header_light > .section-header__header {
+  font-family: "Bazar", sans-serif;
+  text-shadow: 1px 1px 0px #F9EBD9, 2px 2px 0px #3a3a3a;
+}
+.section-header_light > .section-header__subheader {
+  font-family: "Oswald", sans-serif;
+}
+
+.section-header_dark {
+  color: #F9EBD9;
+  text-transform: uppercase;
+  text-align: center;
+}
+.section-header_dark > .section-header__header {
+  font-family: "Bazar", sans-serif;
+  text-shadow: 1px 1px 0px #3a3a3a, 2px 2px 0px #F9EBD9;
+}
+.section-header_dark > .section-header__subheader {
+  font-family: "Oswald", sans-serif;
+}
+
+.section-header__separator {
+  width: 50%;
+  margin: 5% 0;
+}
+
+/*# sourceMappingURL=SectionHeader.css.map */

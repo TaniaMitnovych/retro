@@ -1,0 +1,33 @@
+
+//@import '../../fonts';
+@import '../../vars'; 
+.section-header_light {
+  color: $header-color-dark;
+  text-transform: uppercase;
+  text-align: center;
+  &>.section-header__header{
+    font-family: $subheaders-font-bazar;
+    text-shadow: 1px 1px 0px $text-color-light, 2px 2px 0px $header-color-dark;
+  }
+  &>.section-header__subheader{
+    font-family: $section-subheader-font-oswald;
+  }
+  
+}
+.section-header_dark{
+  color: $text-color-light;
+  text-transform: uppercase;
+  text-align: center;
+  &>.section-header__header{
+    font-family: $subheaders-font-bazar;
+    text-shadow: 1px 1px 0px $header-color-dark, 2px 2px 0px $text-color-light;
+  }
+  &>.section-header__subheader{
+    font-family: $section-subheader-font-oswald;
+  }
+  
+}
+.section-header__separator{
+  width:50%;
+  margin:5% 0;
+}
