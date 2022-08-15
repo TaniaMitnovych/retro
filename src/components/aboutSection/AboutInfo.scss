@@ -1,0 +1,28 @@
+.about-info{
+  display: -ms-grid;
+  display: grid;
+}
+@media (max-width:650px){
+  .about-info{
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+}
+
+@media (min-width:650px){
+  .about-info{
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+@media (min-width:1100px){
+  .about-info{
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+    grid-template-rows: 1fr;
+  }
+  
+}
