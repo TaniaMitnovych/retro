@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Bazar";
+  src: url("../../fonts/Bazar.ttf") format("truetype");
+}
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../images/About section BG.png");
+  position: relative;
+}
+.about-section .about-info {
+  margin: 3% 0 7% 0;
+}
+.about-section__line_dashed-top {
+  top: 15px;
+}
+.about-section__line_dashed-bottom {
+  bottom: 15px;
+}
+
+/*# sourceMappingURL=AboutSection.css.map */

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Bazar';
+  src: url('../../fonts/Bazar.ttf') format('truetype');
+}
+
+@import '../../vars';
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../../images/About\ section\ BG.png');
+  position: relative;
+  & .about-info{
+    margin: 3% 0 7% 0;
+  }
+  &__line_dashed{
+    &-top{
+      top:15px;
+    }
+    &-bottom{
+      bottom: 15px;
+    }
+  }
+}
