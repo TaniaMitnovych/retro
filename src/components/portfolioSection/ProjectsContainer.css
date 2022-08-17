@@ -1,0 +1,25 @@
+.projects-container {
+  display: -ms-grid;
+  display: grid;
+}
+
+@media (max-width: 650px) {
+  .projects-container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 650px) {
+  .projects-container {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1050px) {
+  .projects-container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=ProjectsContainer.css.map */
