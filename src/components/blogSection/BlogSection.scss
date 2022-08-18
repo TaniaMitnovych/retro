@@ -1,0 +1,35 @@
+@import '../../fonts';
+@import '../../vars';
+.blog-section{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../../images/Blog\ section\ BG.png');
+  position: relative;
+  &__line_dashed{
+    &-top{
+      top:15px;
+    }
+    &-bottom{
+      bottom: 15px;
+    }
+  }
+  &__button{
+    border:none;
+    border-top: 3px solid;
+    border-image: linear-gradient(to right, transparent 30%, $header-color-dark 30%, $header-color-dark 70%, transparent 70%, transparent 100%) 4;
+    background-color: transparent;
+    font-family: $section-subheader-font-oswald;
+    font-weight:900;
+    color: $header-color-dark;
+    text-transform: uppercase;
+    margin:40px 0;
+  }
+  &-dark{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/Blog\ section\ BG.png');
+    & .blog-section__button{
+      color: $text-color-light;
+    }
+  }
+}
+

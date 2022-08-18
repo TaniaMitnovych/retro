@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.blog-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../images/Blog section BG.png");
+  position: relative;
+}
+.blog-section__line_dashed-top {
+  top: 15px;
+}
+.blog-section__line_dashed-bottom {
+  bottom: 15px;
+}
+.blog-section__button {
+  border: none;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, transparent 30%, #3a3a3a 30%, #3a3a3a 70%, transparent 70%, transparent 100%) 4;
+  background-color: transparent;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+  color: #3a3a3a;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+.blog-section-dark {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Blog section BG.png");
+}
+.blog-section-dark .blog-section__button {
+  color: #F9EBD9;
+}
+
+/*# sourceMappingURL=BlogSection.css.map */

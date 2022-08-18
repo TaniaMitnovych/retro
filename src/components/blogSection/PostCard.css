@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.post-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: #3a3a3a;
+  opacity: 0;
+}
+.post-card img {
+  width: 30%;
+  margin: 2%;
+  border: 5px solid #fbfaf6;
+  border-radius: 2px;
+}
+.post-card__title {
+  font-family: "Roboto Slab", serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 2% 0;
+}
+.post-card__info, .post-card__responses {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.post-card hr {
+  border-top: 3px solid #3a3a3a;
+  width: 55px;
+  margin: 2% 0;
+}
+.post-card__text {
+  display: inline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.7;
+  font-family: "Roboto Slab", serif;
+}
+.post-card__responses {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.post-card__content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 2%;
+  position: relative;
+}
+.post-card a {
+  text-decoration: none;
+  color: #3a3a3a;
+}
+.post-card__show-more {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.post-card_dark {
+  color: #F9EBD9;
+}
+.post-card_dark a {
+  color: #F9EBD9;
+}
+
+@media (max-width: 1000px) {
+  .post-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .post-card__content {
+    align-items: center;
+  }
+  .post-card__responses {
+    position: static;
+    display: inline;
+    margin-top: 10px;
+  }
+}
+@keyframes show {
+  from {
+    visibility: hidden;
+  }
+  to {
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=PostCard.css.map */

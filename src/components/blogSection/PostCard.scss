@@ -1,0 +1,102 @@
+@import '../../fonts';
+@import '../../vars';
+.post-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color:$header-color-dark;
+  opacity: 0;
+  & img {
+    width: 30%;
+    margin: 2%;
+    border:5px solid $light-color-elements;
+    border-radius: 2px;
+  }
+  &__title{
+    font-family: $plain-text-font-roboto-slab;
+    font-weight: bold;
+    font-size: 20px;
+    margin:2% 0;
+  }
+  &__info,
+  &__responses{
+    font-family: $section-subheader-font-oswald;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  & hr{
+    border-top: 3px solid $header-color-dark;
+    width:55px;
+    margin:2% 0;
+  }
+  &__text {
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-height: 1.7;
+    font-family: $plain-text-font-roboto-slab;
+
+  }
+
+  &__responses {
+    position: absolute;
+    right: 0;
+    top:0;
+  }
+
+  &__content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2%;
+    position: relative;
+  }
+  & a{
+    text-decoration: none;
+    color:$header-color-dark;
+  }
+  &__show-more{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
+.post-card_dark{
+  color:$text-color-light;
+  & a{
+    color:$text-color-light;
+  }
+}
+@media (max-width:1000px){
+  .post-card{
+    flex-direction: column;
+    align-items: center;
+    &__content{
+      align-items: center;
+    }
+    &__responses{
+      position: static;
+      display: inline;
+      margin-top: 10px;
+    }
+  }
+}
+@keyframes show{
+  from{
+    visibility: hidden;
+  }
+  to{
+    visibility: visible;
+  }
+}
+// .shown{
+//   transition-duration: 3s;
+//   visibility: visible;
+//   //animation: 1s linear 0s 1 show;
+// }
