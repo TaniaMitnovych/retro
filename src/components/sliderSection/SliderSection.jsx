@@ -15,7 +15,7 @@ const SliderSection = (props) => {
     { title: 'cat5', image: '' }
   ]
   return (
-    <section className='slider-section'>
+    <section className={`slider-section slider-section-${props.theme}`}>
       <div className='container'>
         <hr className='slider-section__line_dashed-top dashed-line' />
         <img src={retroBanner} alt='retro' className='slider-section__banner' />
