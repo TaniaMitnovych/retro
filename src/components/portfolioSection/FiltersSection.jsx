@@ -1,5 +1,5 @@
 import React, {useState}from 'react';
-
+import './FiltersSection.css';
 const FiltersSection = (props) => {
   return (
     <div className='filters-section'>

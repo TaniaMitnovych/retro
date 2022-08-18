@@ -66,9 +66,12 @@ const ProjectsContainer = () => {
         return [...prev];
       });
       event.target.checked = false;
+      
     } else {
       setFilters(prev => [...prev, event.target.value]);
       event.target.checked = true;
+      console.log(event.target.parentElement.previousElementSibling);
+      event.target.parentElement.previousElementSibling.style.borderRight= '#7ababa';
     }
     setFilteredProj(filterProjects());
   }
@@ -122,7 +125,7 @@ const ProjectsContainer = () => {
                   onChange={(event) => {handleFilterClick(event); handleOnChange(i)}}
                   checked={checkedState[i]}
                 />
-                <label htmlFor={technology}>{technology}</label>
+                <label htmlFor={technology}>{'● '+technology}</label>
               </li>
             )
           })
@@ -131,8 +134,8 @@ const ProjectsContainer = () => {
       {
         showProjects()
       }
-      <hr />
-      <button type='button' onClick={() => { setShown(prev => { return prev ? false : true }) }}>{buttonText}</button>
+      <hr className='projects-container__line'/>
+      <button className='projects-container__submit-button' type='button' onClick={() => { setShown(prev => { return prev ? false : true }) }}>{buttonText}</button>
     </div>
   );
 };

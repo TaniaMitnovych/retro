@@ -16,6 +16,11 @@
 }
 .project-card__info, .project-card__icon-circle, .project-card__name {
   position: absolute;
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+  color: #3a3a3a;
 }
 .project-card__name {
   bottom: -40px;
@@ -28,9 +33,10 @@
   box-sizing: border-box;
 }
 .project-card__icon-circle {
-  width: 10%;
+  width: 40px;
+  height: 40px;
   background-color: #fbfaf6;
-  bottom: -10%;
+  bottom: -20px;
   border-radius: 50px;
   z-index: 6;
 }
@@ -44,10 +50,13 @@
   height: 100%;
   visibility: hidden;
   transition-duration: 0.3s;
+  line-height: 1.2;
   color: #F9EBD9;
+  font-family: "Oswald", sans-serif;
 }
 .project-card__info > * {
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
+  text-align: center;
 }
 
 .project-card:hover .project-card__info {

@@ -3,6 +3,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.portfolio-section__line_dashed-top {
+  top: 15px;
+}
+.portfolio-section__line_dashed-bottom {
+  bottom: 15px;
+}
+.portfolio-section-dark {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/Portfolio section BG.png");
+}
+.portfolio-section-dark .projects-container__submit-button, .portfolio-section-dark .filters-section__text {
+  color: #F9EBD9;
 }
 
 /*# sourceMappingURL=PortfolioSection.css.map */

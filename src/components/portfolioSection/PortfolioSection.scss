@@ -1,6 +1,23 @@
+@import '../../vars';
 .portfolio-section{
   background:url('../../images/Portfolio\ section\ BG.png');
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  &__line_dashed{
+    &-top{
+      top:15px;
+    }
+    &-bottom{
+      bottom: 15px;
+    }
+  }
+  &-dark{
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/Portfolio\ section\ BG.png');
+    & .projects-container__submit-button,
+    & .filters-section__text{
+      color: $text-color-light;
+    }
+  }
 }
