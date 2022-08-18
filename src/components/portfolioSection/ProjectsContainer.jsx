@@ -31,20 +31,16 @@ const ProjectsContainer = () => {
   useEffect(() => {
     if (shownAllProj) {
       setFilters([]);
-      //setAmountOfVisibleProjects(filteredPtoj.length);
       setCheckedState(new Array(technologies.length).fill(true));
       setButtonText("Hide projects");
     } else {
-      //setAmountOfVisibleProjects(defaultAmountOfVisibleProjects);
       setCheckedState(new Array(technologies.length).fill(false));
       setButtonText("Browse all");
     }
   }, [shownAllProj])
 
   const filterProjects = () => {
-    console.log(filters.length);
     if (filters.length === 0) {
-      console.log(projects);
       projects.sort((project1, project2) => {
         let dat1 = new Date(project1.date),
           dat2 = new Date(project2.date);
@@ -59,7 +55,6 @@ const ProjectsContainer = () => {
     } else {
       return [...(projects.filter(proj => {
         let intersection = _.intersection(filters, proj.technologies);
-        console.log(intersection);
         return _.isEqual(filters, intersection);
       }))]
     }
@@ -70,11 +65,9 @@ const ProjectsContainer = () => {
         _.remove(prev, (filter) => { return filter === event.target.value });
         return [...prev];
       });
-      console.log(filters);
       event.target.checked = false;
     } else {
       setFilters(prev => [...prev, event.target.value]);
-      console.log(filters);
       event.target.checked = true;
     }
     setFilteredProj(filterProjects());
@@ -89,10 +82,7 @@ const ProjectsContainer = () => {
     else if(filteredPtoj.length > amountOfVisibleProjects &&
       shownAllProj){
       amountOfProjectsToShow=filteredPtoj.length;
-      //setAmountOfVisibleProjects(defaultAmountOfVisibleProjects);
     }
-    console.log(filteredPtoj.length);
-    console.log(amountOfProjectsToShow);
     if (filteredPtoj.length === 0) {
       return <p>Nothing was found</p>
     } else {
