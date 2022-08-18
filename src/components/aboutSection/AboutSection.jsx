@@ -11,10 +11,11 @@ import './AboutSection.css';
 import SectionHeader from '../sectionHeader/SectionHeader';
 const AboutSection = (props) => {
   return (
-    <section className='about-section'>
+    <section className={`about-section about-section-${props.theme}`} id='about'>
       <div className='container'>
         <hr className='about-section__line_dashed-top dashed-line' />
         <SectionHeader 
+        color='dark'
         theme={props.theme} 
         header='About me' 
         subheader='I am frontend developer from Lviv'/>
