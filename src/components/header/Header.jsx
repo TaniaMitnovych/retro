@@ -4,7 +4,7 @@ import './Header.css';
 import ReadingBar from '../readingBar/ReadingBar';
 const Header = (props) => {
   return (
-    <div className={`header header-${props.theme}`}>
+    <div className={`header header-dark`}>
       <div className='container header__container'>
         <ul className='header__list header__list-left'>
           <li><a href=''>About me</a></li>
