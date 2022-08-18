@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "SeasideResortNF";
+  src: url("../../fonts/SeasideResortNF.ttf") format("truetype");
+}
+.logo {
+  background-image: url("../../logo/logo.svg");
+  width: 15%;
+  min-width: 100px;
+  min-height: 135%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+.logo__letters {
+  font-family: "SeasideResortNF", sans-serif;
+  text-align: center;
+  font-size: 6vmax;
+  color: rgb(246, 237, 216);
+  line-height: 160%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 50%;
+}
+
+/*# sourceMappingURL=Logo.css.map */

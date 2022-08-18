@@ -1,0 +1,24 @@
+.about-icon {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(212, 82, 68);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.about-icon__circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 3px white solid;
+  border-radius: 50px;
+  width: 90%;
+  height: 90%;
+}
+.about-icon__image {
+  width: 60%;
+}
+
+/*# sourceMappingURL=AboutIcon.css.map */
