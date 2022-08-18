@@ -1,12 +1,7 @@
-
-//@import '../../fonts';
 @import '../../vars'; 
 .section-header_light {
   color: $header-color-dark;
-  text-transform: uppercase;
-  text-align: center;
   &>.section-header__header{
-    font-family: $subheaders-font-bazar;
     text-shadow: 1px 1px 0px $text-color-light, 2px 2px 0px $header-color-dark;
   }
   &>.section-header__subheader{
@@ -16,18 +11,25 @@
 }
 .section-header_dark{
   color: $text-color-light;
+  &>.section-header__header{
+    text-shadow: 1px 1px 0px $header-color-dark, 2px 2px 0px $text-color-light;
+  }
+}
+.section-header__separator{
+  width:40%;
+  margin:5% 0;
+}
+.section-header{
   text-transform: uppercase;
   text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
   &>.section-header__header{
     font-family: $subheaders-font-bazar;
-    text-shadow: 1px 1px 0px $header-color-dark, 2px 2px 0px $text-color-light;
+    font-size:70px;
   }
   &>.section-header__subheader{
     font-family: $section-subheader-font-oswald;
+    font-size:16px;
   }
-  
-}
-.section-header__separator{
-  width:50%;
-  margin:5% 0;
 }
