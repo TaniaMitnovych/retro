@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+.contacts-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/Contact section BG.png");
+  position: relative;
+}
+.contacts-section__line_dashed-top {
+  top: 15px;
+}
+.contacts-section__line_dashed-bottom {
+  bottom: 15px;
+}
+.contacts-section__text {
+  font-family: "Bazar", sans-serif;
+  color: #F9EBD9;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, transparent 30%, #F9EBD9 30%, #F9EBD9 70%, transparent 70%, transparent 100%) 4;
+  background-color: transparent;
+  margin: 30px 0 15px 0;
+  padding: 10px 0;
+}
+.contacts-section__social-list {
+  display: flex;
+  margin-bottom: 60px;
+}
+.contacts-section__social-list img {
+  width: 50px;
+}
+.contacts-section__social-list li {
+  margin: 0 3px;
+}
+
+/*# sourceMappingURL=ContactsSection.css.map */
