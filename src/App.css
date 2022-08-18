@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Bazar";
+  src: url("./fonts/Bazar.ttf") format("truetype");
+}
+body {
+  box-sizing: border-box;
+}
+.App{
+  position: relative;
+}
+.theme-switcher{
+  border:none;
+  background-color: transparent;
+  position: fixed;
+  top:35px;
+  right: 50px;
+  z-index: 11;
+  font-family: 'Bazar', sans-serif;
+  text-transform: uppercase;
+  color:#F9EBD9;
+  font-size: 3vmin;
+}

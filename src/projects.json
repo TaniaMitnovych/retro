@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Image Searcher",
+    "date": "2022-05-20",
+    "technologies": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "ajax",
+      "C++"
+    ],
+    "cost": "200$",
+    "image_url": "./projectImages/image_searcher.png"
+  },
+  {
+    "name": "COYS",
+    "date": "2022-08-20",
+    "technologies": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "ajax"
+    ],
+    "cost": "400$",
+    "image_url": "./projectImages/coys.png"
+  },
+  {
+    "name": "Online Store",
+    "date": "2022-05-05",
+    "technologies": [
+      "html",
+      "css",
+      "js",
+      "react",
+      "ajax"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/online_store.png"
+  },
+  {
+    "name": "Freebie Agency",
+    "date": "2022-01-27",
+    "technologies": [
+      "html",
+      "css"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/freebie_agency.png"
+  },
+  {
+    "name": "John's landing",
+    "date": "2022-02-25",
+    "technologies": [
+      "html",
+      "css"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/john.png"
+  },
+  {
+    "name": "Web-dev",
+    "date": "2022-03-10",
+    "technologies": [
+      "html",
+      "css"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/web-dev.png"
+  },
+  {
+    "name": "Lemon",
+    "date": "2021-11-20",
+    "technologies": [
+      "html",
+      "css",
+      "js",
+      "angular"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/lemon.png"
+  },
+  {
+    "name": "Roby's landing",
+    "date": "2021-10-15",
+    "technologies": [
+      "html",
+      "css",
+      "js",
+      "angular"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/roby.png"
+  },
+  {
+    "name": "Kal Hans",
+    "date": "2021-09-15",
+    "technologies": [
+      "html",
+      "css",
+      "js",
+      "angular",
+      "ajax"
+    ],
+    "cost": "100$",
+    "image_url": "./projectImages/kal_hans.png"
+  }
+]
